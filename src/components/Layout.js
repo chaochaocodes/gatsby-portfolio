@@ -3,10 +3,13 @@ import React from "react"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
+
+// Layout wraps all components, includes: Navbar, Sidebar, Footer
 const Layout = ({ children }) => {
   return (
     <>
-      <h2>layout component</h2>
+      <Navbar/>
+      {children}
     </>
   )
 }

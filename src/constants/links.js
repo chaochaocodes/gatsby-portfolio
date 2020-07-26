@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 const data = [
   {
-    id: 1,
-    text: "home",
-    url: "/",
+    id: 1, // id for list key 
+    text: "home", // display text in nav bar
+    url: "/", // navigate to /home
   },
   {
     id: 2,
@@ -36,6 +36,7 @@ const tempLinks = data.map(link => {
   )
 })
 // I KNOW WE CAN COMBINE IT !!!!!
+// option to change styleClass props
 
 export default ({ styleClass }) => {
   return (

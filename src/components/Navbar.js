@@ -1,9 +1,25 @@
 import React from "react"
+// logo in header
 import logo from "../assets/logo.svg"
+// toggle 'hamburger icon' for responsive view
 import { FaAlignRight } from "react-icons/fa"
+// links each page, web view
 import PageLinks from "../constants/links"
+
 const Navbar = () => {
-  return <h2>navbar component</h2>
+  return (
+  <nav className="navbar">
+    <div className="nav-center">
+      <div className="nav-header">
+        <img src={logo} alt="logo"/>
+        <button type="button" className="toggle-btn">
+          <FaAlignRight></FaAlignRight>
+        </button>
+      </div> 
+      <PageLinks styleClass="nav-links"></PageLinks>
+    </div>
+  </nav>
+  )
 }
 
 export default Navbar
