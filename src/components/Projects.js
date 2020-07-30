@@ -13,7 +13,7 @@ const Projects = ({projects,title,showLink}) => {
         </div>
         {
           showLink && (
-          <Link to='/projecs' className="btn center-btn">
+          <Link to='/projects' className="btn center-btn">
             projects
           </Link>
         )}
