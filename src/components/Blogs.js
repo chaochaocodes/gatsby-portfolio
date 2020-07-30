@@ -8,6 +8,7 @@ export const Blogs = ({blogs, title, showLink}) => {
     <Title title={title} />
     <div className="section-center blogs-center">
       {blogs.map((blog)=> {
+        // ...spread properties of blog to pass into Blog.js
         return <Blog key={blog.id} {...blog}/>
       })}
     </div>
