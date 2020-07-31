@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({description, title, github, stack, url, image, index}) => {
+
   return (
     <article className="project">
       <Image fluid={image.childImageSharp.fluid} className="project-img"/>
@@ -30,6 +31,15 @@ const Project = ({description, title, github, stack, url, image, index}) => {
   )
 }
 
-Project.propTypes = {}
+// Use: gives warnings in console if any props missing vs. vague error
+// import PropTypes, call .propTypes method, to define required properties
+Project.propTypes = {
+  title:PropTypes.string.isRequired,
+  github:PropTypes.string.isRequired,
+  url:PropTypes.string.isRequired,
+  description:PropTypes.string.isRequired,
+  image:PropTypes.object.isRequired,
+  stack:PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default Project
