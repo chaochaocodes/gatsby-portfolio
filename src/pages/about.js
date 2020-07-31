@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
-
+import SEO from '../components/SEO'
 // 2. destructure 'about' from graphql query
 const About = ({
     data: {
@@ -15,6 +15,7 @@ const About = ({
 
   return (
       <Layout>
+        <SEO title="About" description="about page"/>
         <section className="about-page">
           <div className="section-center about-center">
             <Image fluid={image.childImageSharp.fluid}
