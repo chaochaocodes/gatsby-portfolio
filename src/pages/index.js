@@ -19,10 +19,10 @@ export default ({data}) => {
   <Layout>
     <SEO title="Home" description="this is the home page"/>
     <Hero/>
-    <Services/>
-    <Jobs/>
+    {/* <Services/> */}
     <Projects projects={projects} title="featured projects" showLink />
-    <Blogs blogs={blogs} title="blog posts" showLink />
+    {/* <Blogs blogs={blogs} title="blog posts" showLink /> */}
+    <Jobs/>
   </Layout>
   )
 }
