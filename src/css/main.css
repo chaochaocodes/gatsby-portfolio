@@ -703,8 +703,8 @@ Projects
 }
 .project-icon {
   color: var(--clr-primary-5);
-  font-size: 1.25rem;
-  margin-right: 0.5rem;
+  font-size: 1.75rem;
+  margin-right: 0.75rem;
   transition: var(--transition);
 }
 .project-icon:hover {
