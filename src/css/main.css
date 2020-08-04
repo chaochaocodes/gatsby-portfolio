@@ -190,7 +190,7 @@ p {
 /* social links */
 .social-links {
   margin-top: 2rem;
-  width: 15rem;
+  width: 10rem;
   display: flex;
   justify-content: space-between;
 }
@@ -231,6 +231,12 @@ Navbar
 }
 .nav-header img {
   margin-bottom: 0.375rem;
+}
+.nav-header h3 {
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
 }
 .toggle-btn {
   font-size: 2rem;
