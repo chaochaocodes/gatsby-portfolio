@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 const data = [
-  {
-    id: 1, // id for list key 
-    text: "home", // display text in nav bar
-    url: "/", // navigate to /home
-  },
+  // {
+  //   id: 1, // id for list key 
+  //   text: "home", // display text in nav bar
+  //   url: "/", // navigate to /home
+  // },
   {
     id: 2,
     text: "about",
@@ -16,11 +16,11 @@ const data = [
     text: "projects",
     url: "/projects/",
   },
-  {
-    id: 4,
-    text: "blog",
-    url: "/blog/",
-  },
+  // {
+  //   id: 4,
+  //   text: "blog",
+  //   url: "/blog/",
+  // },
   {
     id: 5,
     text: "contact",
