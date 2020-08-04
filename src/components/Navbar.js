@@ -7,12 +7,22 @@ import { FaAlignRight } from "react-icons/fa"
 // links each page, web view
 import PageLinks from "../constants/links"
 
+const styleTeal = {
+  color: "#2caeba",
+}
+const styleGrey = {
+  color: "#173C5E",
+}
+
 const Navbar = ({toggleSidebar}) => {
   return (
   <nav className="navbar">
     <div className="nav-center">
       <div className="nav-header">
-        <Link to="/"> <h3> Alicia by Design </h3></Link>
+        <h3>
+          <Link to="/" style={styleTeal}> Alicia </Link>
+          <Link to="/" style={styleGrey}> byDesign </Link>
+        </h3>
         <button type="button" 
           className="toggle-btn"
           onClick={toggleSidebar}>
