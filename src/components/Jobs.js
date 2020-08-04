@@ -66,9 +66,9 @@ const Jobs = () => {
         })}
         </article>
       </div>
-      <Link to="/about" className="btn center-btn">
-        more info
-      </Link>
+      <a href="https://learn.co/aliciachao/resume" className="btn center-btn" target="_blank">
+        resume
+      </a>
     </section>
   )
 }
