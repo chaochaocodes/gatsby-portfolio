@@ -16,13 +16,18 @@ const data = [
     text: "projects",
     url: "/projects/",
   },
-  // {
-  //   id: 4,
-  //   text: "blog",
-  //   url: "/blog/",
-  // },
+  {
+    id: 4,
+    text: "experience",
+    url: "/#experience",
+  },
   {
     id: 5,
+    text: "skills",
+    url: "/#skills",
+  },
+  {
+    id: 6,
     text: "contact",
     url: "/contact/",
   },
