@@ -2,10 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
-import Services from "../components/Services"
+// import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
+// import Blogs from "../components/Blogs"
+import Skills from "../components/Skills"
 import SEO from "../components/SEO"
 
 export default ({data}) => {
@@ -23,6 +24,7 @@ export default ({data}) => {
     <Projects projects={projects} title="featured projects" showLink />
     {/* <Blogs blogs={blogs} title="blog posts" showLink /> */}
     <Jobs/>
+    <Skills/>
   </Layout>
   )
 }
