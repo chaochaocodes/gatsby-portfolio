@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
-const Project = ({description, title, github, stack, url, image, index}) => {
+import { FaGithub, FaYoutube, FaLink } from "react-icons/fa"
+const Project = ({description, title, github, stack, url, demo, image, index}) => {
 
   return (
     <article className="project">
@@ -19,12 +19,21 @@ const Project = ({description, title, github, stack, url, image, index}) => {
         })}
       </div>
       <div className="project-links">
-        <a href={github} target="_blank">
-          <FaGithubSquare className="project-icon"/>
+        <a href={github} target="_blank" rel="noreferrer">
+          <FaGithub className="project-icon"/>
         </a>
-        <a href={url} target="_blank">
-          <FaShareSquare className="project-icon"/>
-        </a>
+        { demo ? 
+          <a href={demo} target="_blank" rel="noreferrer">
+            <FaYoutube className="project-icon"/>
+          </a> 
+          : ""
+        }
+        { url ? 
+          <a href={url} target="_blank" rel="noreferrer">
+            <FaLink className="project-icon"/>
+          </a>
+          : ""
+        }
       </div>
     </div>
     </article>
@@ -36,7 +45,8 @@ const Project = ({description, title, github, stack, url, image, index}) => {
 Project.propTypes = {
   title:PropTypes.string.isRequired,
   github:PropTypes.string.isRequired,
-  url:PropTypes.string.isRequired,
+  // url:PropTypes.string.isRequired,
+  // demo:PropTypes.string.isRequired,
   description:PropTypes.string.isRequired,
   image:PropTypes.object.isRequired,
   stack:PropTypes.arrayOf(PropTypes.object).isRequired,
