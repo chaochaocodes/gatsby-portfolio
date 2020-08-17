@@ -44,7 +44,7 @@ const Jobs = () => {
               key={item.strapiId} 
               onClick={()=> setValue(index)}
               className={`job-btn ${index === value && 'active-btn'}`}>
-              {item.date}
+              {item.position}
             </button>
             )
           })}
