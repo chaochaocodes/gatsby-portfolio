@@ -190,7 +190,7 @@ p {
 /* social links */
 .social-links {
   margin-top: 2rem;
-  width: 10rem;
+  width: 8rem;
   display: flex;
   justify-content: space-between;
 }
@@ -219,6 +219,11 @@ Navbar
   z-index: 200;
   background: var(--clr-white);
 }
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
 .nav-center {
   width: 90vw;
   max-width: 1170px;
@@ -233,6 +238,7 @@ Navbar
   margin-bottom: 0.375rem;
 }
 .nav-header h3 {
+  text-transform: none;
   font-weight: 500;
   margin-top: 1rem;
   font-size: 1.5rem;
@@ -471,6 +477,8 @@ Hero
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
+    height: 80%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -555,7 +563,7 @@ Jobs
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 .job-btn {
   background: transparent;
@@ -577,9 +585,9 @@ Jobs
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
-.job-info {
-  /* min-height: 420px; */
-}
+/* .job-info {
+  min-height: 420px;
+} */
 .job-info h3 {
   font-weight: 400;
 }
@@ -630,6 +638,32 @@ Jobs
   }
 }
 
+/*
+=============== 
+Skills
+===============
+*/
+
+.skills {
+  background: var(--clr-grey-10);
+}
+.skills-center {
+  width: 70vw;
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+}
+.skills-info {
+  display: flex;
+  grid-template-columns: 600px;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.skills-info p {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+ 
 /*
 =============== 
 Projects
@@ -702,9 +736,9 @@ Projects
   margin-top: 0.5rem;
 }
 .project-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-2);
   font-size: 1.75rem;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
   transition: var(--transition);
 }
 .project-icon:hover {
@@ -900,7 +934,7 @@ About Page
 }
 .about-img {
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 30rem;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
