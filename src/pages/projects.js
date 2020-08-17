@@ -26,6 +26,7 @@ export const query = graphql`
         description
         title
         url
+        demo
         image {
           childImageSharp {
             fluid {

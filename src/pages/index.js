@@ -10,10 +10,10 @@ import Skills from "../components/Skills"
 import SEO from "../components/SEO"
 
 export default ({data}) => {
-  console.log(data);
+  // console.log(data);
   const {
     allStrapiProjects: {nodes: projects},
-    allStrapiBlogs: {nodes: blogs}
+    // allStrapiBlogs: {nodes: blogs}
   } = data
 
   return (
@@ -38,6 +38,7 @@ export const query = graphql`
         description
         title
         url
+        demo
         image {
           childImageSharp {
             fluid {
