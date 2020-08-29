@@ -3,7 +3,7 @@ import Title from './Title';
 
 const Skills = () => {
 
-  let frontEnd = ["JavaScript, ES6+","React", "React-Redux",  "HTML", "CSS", "Node.js", "GraphQL"]
+  let frontEnd = ["JavaScript (ES6)","React", "React-Redux",  "HTML", "CSS", "Node.js", "GraphQL"]
   let backEnd = ["Ruby", "Ruby on Rails", "SQL", "PostgreSQL", "MongoDB"]
   let tools =["Git / GitHub", "RESTful APIs", "MVC architecture", "Adobe XD", "Material UI", "Strapi (CMS)"]
 

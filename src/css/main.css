@@ -569,13 +569,14 @@ Jobs
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
-  font-size: 1.25rem;
-  letter-spacing: var(--spacing);
+  font-size: 1rem;
+  letter-spacing: none;
   margin: 0 0.5rem;
   transition: var(--transition);
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1;
+  margin-bottom: 0.75rem;
 }
 .job-btn:hover {
   color: var(--clr-primary-5);
@@ -629,6 +630,8 @@ Jobs
   }
   .job-btn {
     margin-bottom: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: var(--spacing);
   }
   .active-btn {
     box-shadow: -2px 0 var(--clr-primary-5);
@@ -648,7 +651,7 @@ Skills
   background: var(--clr-grey-10);
 }
 .skills-center {
-  width: 70vw;
+  width: 90vw;
   display: grid;
   align-items: center;
   margin: 0 auto;
@@ -663,7 +666,11 @@ Skills
   margin-bottom: .5rem;
   font-size: 1.1rem;
 }
- 
+@media screen and (min-width: 992px) {
+  .skills-center {
+    width: 60vw;
+  }
+}
 /*
 =============== 
 Projects
