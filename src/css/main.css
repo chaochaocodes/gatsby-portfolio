@@ -571,12 +571,6 @@ Jobs
   margin-bottom: .75rem;
   overflow: auto;
 }
-/* @media only screen and (max-width: 375px) {
-  .btn-container button {
-    float: left;
-    position: relative;
-  }
-} */
 .job-btn {
   background: transparent;
   border-color: transparent;
@@ -677,13 +671,13 @@ Skills
 }
 .skills-info p {
   margin-bottom: .5rem;
-  font-size: 1.1rem;
 }
-@media screen and (min-width: 992px) {
-  .skills-center {
-    width: 60vw;
+@media screen and (min-width: 576px) { 
+  .skills-info {
+    margin: 0 5rem;
   }
 }
+
 /*
 =============== 
 Projects

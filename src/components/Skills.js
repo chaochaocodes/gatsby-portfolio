@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <section className="section skills" id="skills">
       <Title title="skills"/>
-      <div className="skills-center">
+      <div className="section-center skills-center">
         <article className="skills-info">
             <div className="skills-column">
               <h3>Front End</h3>
